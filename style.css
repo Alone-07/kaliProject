@@ -74,12 +74,19 @@ button:focus-within {
   background-color: var(--midNightBlue);
   margin-bottom: 1.5rem;
 }
-.loginSignup {
+.btnContainer > button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+}
+
+/* .loginSignup {
   border: 3px solid var(--babyBlue);
   border-radius: 15px;
-}
+} */
 .mainCard {
   display: none;
+  border: 3px solid var(--babyBlue);
+  border-radius: 15px;
   transition: 1s ease;
 }
 .card {
@@ -149,4 +156,28 @@ button:focus-within {
   width: 50%;
   border-radius: 0px;
   border-top-right-radius: 13px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: white;
+  width: var(--width);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0rem 0rem 1rem 0rem;
+  background-color: var(--midNightBlue);
+  color: var(--bg);
+}
+
+.cards > button {
+  /* width: 50%; */
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.cards > h1 {
+  text-align: center;
+  margin-bottom: 3rem;
 }

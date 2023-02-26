@@ -43,6 +43,7 @@ btnContainer.addEventListener("click", (e) => {
   let targetedCard = document.querySelector(`.${targetDataSet}`);
 
   if (target.classList.contains("btnContainer")) return;
+
   removeClicked(btnContainer);
   target.classList.add("clicked");
 
@@ -51,5 +52,3 @@ btnContainer.addEventListener("click", (e) => {
     targetedCard.style.display = "block";
   }
 });
-
-console.log(mainCard);
