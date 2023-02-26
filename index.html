@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://use.fontawesome.com/75f109834a.js"
+      defer
+      cross-origin="true"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="btnContainer">
+        <button type="button" data-card="home">Home</button>
+        <button type="button" data-card="upload">Upload</button>
+        <button type="button" data-card="download">Download</button>
+        <button type="button" data-card="loginSignup">
+          Admin Login/SignUp
+        </button>
+      </div>
+    </main>
+    <div class="loginSignup mainCard">
+      <div class="chooseContainer">
+        <button type="button" class="loginBtn" data-pass="loginCard">
+          Login
+        </button>
+        <button type="button" class="signUpBtn" data-pass="signUpCard">
+          SignUp
+        </button>
+      </div>
+      <form class="card loginCard" action="javascript:void(0)" method="post">
+        <h1>Admin Login</h1>
+        <div class="formContainer">
+          <label for="name">Admin Name: </label>
+          <input type="text" name="name" value="" class="input" />
+        </div>
+        <div class="formContainer">
+          <label for="name">Admin Password: </label>
+          <input type="current-password" name="name" value="" class="input" />
+        </div>
+        <button type="submit">submit</button>
+      </form>
+
+      <!-- SignUp Container -->
+      <form class="card signUpCard" action="javascript:void(0)" method="post">
+        <h1>Admin SignUp</h1>
+        <div class="formContainer">
+          <label for="name">Admin Name: </label>
+          <input type="text" name="name" value="" class="input" />
+        </div>
+        <div class="formContainer">
+          <label for="name">Email: </label>
+          <input type="email" name="name" value="" class="input" />
+        </div>
+        <div class="formContainer">
+          <label for="name">Password: </label>
+          <input type="new-password" name="name" value="" class="input" />
+        </div>
+        <div class="formContainer">
+          <label for="name">Confirm Password: </label>
+          <input type="new-password" name="name" value="" class="input" />
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <div class="home"></div>
+    <div class="upload"></div>
+    <div class="download"></div>
+  </body>
+</html>
