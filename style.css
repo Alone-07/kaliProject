@@ -63,6 +63,15 @@ button:focus-within {
   background-color: var(--darkBlue);
   color: #eee;
 }
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
+.flex {
+  display: flex !important;
+}
 .container {
   width: var(--width);
   border: 3px solid var(--babyBlue);
@@ -164,8 +173,7 @@ button:focus-within {
   justify-content: center;
   background-color: white;
   width: var(--width);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   padding: 0rem 0rem 1rem 0rem;
   background-color: var(--midNightBlue);
   color: var(--bg);
@@ -180,4 +188,38 @@ button:focus-within {
 .cards > h1 {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.uploadCard {
+  display: none;
+}
+.downloadCard {
+  display: none;
+}
+.uploadCard input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.uploadCard label {
+  width: 25%;
+  align-self: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: #000;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.uploadCard label:hover {
+  background-color: var(--babyBlue);
+}
+.uploadCard label:focus-within {
+  background-color: var(--darkBlue);
+  color: var(--bg);
+}
+
+.uploadFileName {
+  text-align: center;
 }

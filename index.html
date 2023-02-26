@@ -40,84 +40,120 @@
           SignUp
         </button>
       </div>
-      <form
-        class="card loginCard"
-        action="javascript:void(0)"
-        method="post"
-        autocomplete="off"
-      >
+      <form class="card loginCard">
         <h1>Admin Login</h1>
         <div class="formContainer">
           <label for="name">Admin Name: </label>
-          <input type="text" name="name" value="" class="input" />
+          <input type="text" name="name" value="" class="input" required />
         </div>
         <div class="formContainer">
           <label for="name">Admin Password: </label>
-          <input
-            type="password"
-            name="name"
-            value=""
-            class="input"
-            autocomplete="off"
-          />
+          <input type="password" name="name" value="" class="input" required />
         </div>
         <button type="submit">submit</button>
       </form>
 
       <!-- SignUp Container -->
-      <form
-        class="card signUpCard"
-        action="javascript:void(0)"
-        method="post"
-        autocomplete="off"
-      >
+      <form class="card signUpCard">
         <h1>Admin SignUp</h1>
         <div class="formContainer">
           <label for="name">Admin Name: </label>
-          <input type="text" name="name" value="" class="input" />
+          <input type="text" name="name" value="" class="input" required />
         </div>
         <div class="formContainer">
           <label for="name">Email: </label>
-          <input type="email" name="name" value="" class="input" />
+          <input type="email" name="name" value="" class="input" required />
         </div>
         <div class="formContainer">
           <label for="name">Password: </label>
-          <input
-            type="password"
-            name="name"
-            value=""
-            class="input"
-            autocomplete="off"
-          />
+          <input type="password" name="name" value="" class="input" required />
         </div>
         <div class="formContainer">
           <label for="name">Confirm Password: </label>
-          <input
-            type="password"
-            name="name"
-            value=""
-            class="input"
-            autocomplete="off"
-          />
+          <input type="password" name="name" value="" class="input" required />
         </div>
         <button type="submit">submit</button>
       </form>
     </div>
+
     <div class="home mainCard"></div>
+
     <div class="upload mainCard">
-      <div class="uploadConfirmCard cards">
+      <form class="uploadConfirmCard cards">
         <h1>File Upload</h1>
         <div class="formContainer">
           <label for="groupName">Group Name: </label>
-          <input type="text" name="groupName" id="groupName" />
+          <input type="text" name="groupName" id="groupName" required />
         </div>
         <div class="formContainer">
           <label for="groupPassword">Group Password: </label>
-          <input type="password" name="groupPassword" id="groupPassword" />
+          <input
+            type="password"
+            name="groupPassword"
+            id="groupPassword"
+            required
+          />
         </div>
-        <button type="submit">submit</button>
-      </div>
+        <button type="submit" class="uploadConfirmSubmit">submit</button>
+      </form>
+
+      <form class="uploadCard cards">
+        <h1>File Upload</h1>
+        <p class="uploadFileName"></p>
+        <label for="uploadFile"
+          >Browse File
+          <input type="file" name="uploadFile" id="uploadFile" required />
+        </label>
+        <button type="submit" class="uploadFile">Upload</button>
+      </form>
     </div>
-    <div class="download mainCard"></div>
+
+    <div class="download mainCard">
+      <form class="downloadConfirmCard cards">
+        <h1>File Download</h1>
+        <div class="formContainer">
+          <label for="groupNameDownload">Group Name: </label>
+          <input
+            type="text"
+            name="groupNameDownload"
+            id="groupNameDownload"
+            required
+          />
+        </div>
+        <div class="formContainer">
+          <label for="groupPasswordDownload">Group Password: </label>
+          <input
+            type="password"
+            name="groupPasswordDownload"
+            id="groupPasswordDownload"
+            required
+          />
+        </div>
+        <button type="submit" class="downloadConfirmSubmit">submit</button>
+      </form>
+
+      <form class="downloadCard cards">
+        <h1>File Download</h1>
+        <div class="formContainer">
+          <label for="fileNameDownload">File Name: </label>
+          <input
+            type="text"
+            name="fileNameDownload"
+            id="fileNameDownload"
+            required
+          />
+        </div>
+        <div class="formContainer">
+          <label for="keyPasswordDownload">Key: </label>
+          <input
+            type="password"
+            name="groupPasswordDownload"
+            id="groupPasswordDownload"
+            required
+          />
+        </div>
+        <button type="submit" class="downloadFile">submit</button>
+      </form>
+    </div>
   </body>
 </html>
